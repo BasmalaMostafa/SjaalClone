@@ -1,6 +1,6 @@
 # Sjaal
 
-Diagram to the Project: https://drive.google.com/file/d/1vJFg2e-aDH8OW3SNfUijqTGvJab4Zaes/view
+Diagram to the Project Components: https://drive.google.com/file/d/1vJFg2e-aDH8OW3SNfUijqTGvJab4Zaes/view
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
 
