@@ -1,0 +1,6 @@
+
+<div class="container d-flex">
+@for (item of myProducts; track item.name) {
+    <app-product-card [product]="item"></app-product-card>
+}
+</div>

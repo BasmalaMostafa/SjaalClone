@@ -1,0 +1,50 @@
+<div class="container" style="margin-top: 5%; padding-right: 10%;">
+    <div class="row">
+        <div >
+            @for (product of cartProducts; track $index) {
+            <div class="product d-flex justify-content-between mt-5">
+                <div class="productData d-flex">
+                    <div class="d-flex justify-content-center" style="width: 35%; height: 80%; border:1px solid  #d3d4d5; border-radius: 10%;">
+                        <img class="img-fluid" src="{{product.image}}" alt=""
+                            style="width: 80%;" />
+                    </div>
+                    <div class="productDetails ms-3 d-flex flex-column">
+                        <span>{{product.name}}</span>
+                        <span>quantity: {{product.quantity}}</span>
+
+                    </div>
+                </div>
+                <div class="productPrice d-flex justify-content-center" style="width: 100%;margin-right: 0%;">
+                    <p>{{product.price|customCurrency:'EGP'}}</p>
+                </div>
+
+            </div>
+        }
+            <div class="discountCode d-flex mb-3">
+                <input type="text" class="form-control me-2" placeholder="Discount code">
+                <button class="btn" id="apply" style="background-color: #d3d4d5">Apply</button>
+            </div>
+            <div class="price">
+                <div class="subtotal d-flex justify-content-between">
+                    <p>Subtotal</p>
+                    <p class="bold">{{subTotal|customCurrency:'EGP'}}</p>
+                </div>
+
+                <div class="shipping d-flex justify-content-between">
+                    <p>Shipping</p>
+                    <p class="bold">{{shippingPrice|customCurrency:'EGP'}}</p>
+                </div>
+
+
+                <div class="total d-flex justify-content-between" style="font-size: larger;">
+                    <p class="bold">Total</p>
+                    <p class="bold">{{total|customCurrency:'EGP'}}</p>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
